@@ -55,8 +55,8 @@ public class TerrainGenerator2 : MonoBehaviour
 
             for (int j = 0; j < terrain.terrainData.heightmapWidth; ++j)
             {
-                float x = i / (float)terrain.terrainData.heightmapWidth;
-                float y = j / (float)terrain.terrainData.heightmapHeight;
+                float x = i / (float)terrain.terrainData.heightmapWidth * scale + offsetX;
+                float y = j / (float)terrain.terrainData.heightmapHeight * scale + offsetY;
 
 
 
@@ -77,16 +77,9 @@ public class TerrainGenerator2 : MonoBehaviour
         }
         terrain.terrainData.SetHeights(0, 0, heightmap);
         
-        offsetX += Time.deltaTime * 5f;
+        offsetX -= Time.deltaTime * 5f;
     }
         
     
-        
-        float Height(int x, int y)
-    {
-        float xCoord = (float)x / Twidth * scale + offsetX;
-        float yCoord = (float)y / Theight * scale + offsetY;
 
-        return Mathf.PerlinNoise(xCoord, yCoord);
-    }
 }

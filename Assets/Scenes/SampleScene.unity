@@ -306,7 +306,6 @@ GameObject:
   - component: {fileID: 2019441056}
   - component: {fileID: 2019441055}
   - component: {fileID: 2019441058}
-  - component: {fileID: 2019441059}
   - component: {fileID: 2019441060}
   m_Layer: 0
   m_Name: Terrain
@@ -387,24 +386,6 @@ MonoBehaviour:
   flatness: 2.8
   frequency: 4.7
   octaves: 3
---- !u!114 &2019441059
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2019441054}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bea85186a28ab594d9545e4cbc67fbc6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  depth: 20
-  width: 256
-  height: 256
-  scale: 20
-  offsetX: 100
-  offsetY: 100
 --- !u!114 &2019441060
 MonoBehaviour:
   m_ObjectHideFlags: 0
